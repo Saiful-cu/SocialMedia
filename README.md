@@ -1,4 +1,4 @@
-# 🧪 UI Automation Testing Project
+# 🧪 UI Automation Testing Project (Social Media)
 
 ## 📌 Project Overview
 This project is designed to automate key user flows and functional features on a web platform (e.g., Facebook or similar), including:
