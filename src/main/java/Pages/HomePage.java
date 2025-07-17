@@ -60,10 +60,9 @@ public class HomePage extends BasePage {
 
     public void editPost(String story, String newStory) {
         WebElement dropdown = clickOnDropdown(story);
-        wait.until(ExpectedConditions.elementToBeClickable(dropdown));
         dropdown.findElement(editPostLocator).click();
         clickOn(updatePostLocator);
-        driver.findElement(updatePostLocator).sendKeys(newStory);
+        sendKeys(updatePostLocator, newStory);
         clickOn(saveUpdatePostLocator);
     }
 
@@ -92,7 +91,8 @@ public class HomePage extends BasePage {
     public boolean searchResult() throws InterruptedException {
         String result = driver.findElement(searchDataLocator).getText();
         Thread.sleep(1000);
-        if (result.contains("No results found!")) {
+        System.out.println(result);
+        if (result.contains("Saiful")) {
             return true;
         }
         return false;

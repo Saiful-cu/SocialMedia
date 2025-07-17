@@ -23,4 +23,11 @@ public class ProfilePage extends BasePage {
         Thread.sleep(2000);
         element.click();
     }
+
+    public String getFirstName() throws InterruptedException {
+        Thread.sleep(2000);
+        String firstName = driver.findElement(firstNameLocator).getCssValue("value");
+        System.out.println(firstName);
+        return firstName;
+    }
 }

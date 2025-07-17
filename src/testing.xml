@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UserFeatureTestSuite">
+    <test name="User Functional Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.PostManagementTest"/>
+            <class name="tests.SearchFeatureTest"/>
+            <class name="tests.ProfileUpdateTest"/>
+        </classes>
+    </test>
+</suite>
